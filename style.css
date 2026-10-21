@@ -1,27 +1,22 @@
-#principal {
-    width: 80%;
-    height: 400px;
-    background-color: beige;
-    border: 10px solid green;
-    border-radius: 8px;
-    padding: 20px 30px 40px 30px;
+.flex-container {
+    display: flex;
+    background-color: #f0f0f0;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
 }
 
-#principal #hijo1 {
-    width: 30%;
-    height: 50%;
-    background-color: brown;
-    border: 4px dotted black;
-    margin: 30px 40px 0 20px;
-    padding-bottom: 40px;
-    float: left;
+
+.flex-item {
+    background-color: #3498db;
+    padding: 2%;
+    border-radius: 5px;
+    color: white;
 }
 
-#principal #hijo2 {
-    width: 55%;
-    height: 80%;
-    background-color: azure;
-    border: 19px dashed yellow;
-    border-radius: 40px;
-    float: left;
+
+.flex-item:hover {
+    background-color: #2ecc71;
 }
