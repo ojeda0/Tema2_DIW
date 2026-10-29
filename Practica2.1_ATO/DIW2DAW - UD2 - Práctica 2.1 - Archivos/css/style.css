@@ -9,6 +9,7 @@ header {
 
 #logo {
     width: 100%;
+    padding: 20px 0px;
     text-align: center;
 }
 
@@ -17,15 +18,21 @@ header nav {
     width: 50%;
     float: left;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul {
+    display: inline;
+    text-align: left;
     background-color: #bbdb88;
+    padding: 20px 80px 20px 0px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 header nav ul li {
     font-size: 12px;
-    text-align: left;
     display: inline;
     list-style: none;
-    padding: 1% 5% 1% 5%;
+    padding-left: 70px;
 }
 
 header nav ul li a{
@@ -33,10 +40,148 @@ header nav ul li a{
     color: white;
 }
 
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: black
+}
 
 #redes {
     width: 50%;
     display: inline;
     text-align: right;
     float: left;
+}
+
+#redes a {
+    display: inline;
+    list-style: none;
+    padding-right: 35px;
+}
+
+#redes a:first-child::after {
+    
+    content: url("../img/facebook.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#redes a:nth-child(2)::after {
+    
+    content: url("../img/twitter.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#redes a:last-child::after {
+    
+    content: url("../img/linkedin.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#redes a span {
+    display: none;
+}
+
+header nav ul li:nth-child(4) a {
+    color: red;
+}
+
+header nav ul li:nth-child(4) a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.banner img{
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+}
+
+#main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 40px;
+    color: black;
+}
+
+.principal {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.principal p{
+    text-align: justify;
+    color: #92968c;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productos {
+    display: inline;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.productos ul {
+    list-style: none;
+}
+
+.productos ul li{
+    float: left;
+    width: calc(100%/3);
+}
+
+.productos ul li img{
+    width: 100%;
+}
+
+.productos ul li h3{
+    text-align: center;
+    color: #292a27;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Oswald;
+    letter-spacing: 1px;
+}
+
+.desc {
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.prod_bottom {
+    display: inline;
+    width: 100%;
+}
+
+.prod_bottom .price {
+    float: left;
+    width: 50%;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prod_bottom .compra {
+    float: left;
+    width: 50%;
 }
