@@ -1,6 +1,8 @@
 /* resetea los estilos del navegador */
 *{margin: 0; padding: 0;}
 
+
+/* CABECERA */
 header {
     display: block;
     width: 100%;
@@ -97,6 +99,8 @@ header nav ul li:nth-child(4) a:hover {
     text-decoration: underline;
 }
 
+
+/* BANNER Y CONTENIDO PRINCIPAL */
 .banner {
     width: 100%;
     display: block;
@@ -120,9 +124,10 @@ header nav ul li:nth-child(4) a:hover {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
-.principal p{
+.principal p, .doble p{
     text-align: justify;
     color: #92968c;
     font-size: 18px;
@@ -130,8 +135,10 @@ header nav ul li:nth-child(4) a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* ZONA PRODUCTOS */
 .productos {
-    display: inline;
+    display: block;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
@@ -139,11 +146,14 @@ header nav ul li:nth-child(4) a:hover {
 
 .productos ul {
     list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.productos ul li{
-    float: left;
+.productos ul li {
     width: calc(100%/3);
+    padding: 0 15px;
 }
 
 .productos ul li img{
@@ -164,24 +174,138 @@ header nav ul li:nth-child(4) a:hover {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
+    padding-bottom: 15px;
 }
 
 .prod_bottom {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .prod_bottom .price {
-    float: left;
-    width: 50%;
-    text-align: left;
     color: black;
     font-weight: bold;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
 }
 
 .prod_bottom .compra {
-    float: left;
-    width: 50%;
+    background-color: #bbdb88;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.prod_bottom .compra .material-symbols-outlined {
+    font-size: 20px;
+    color: inherit;
+    line-height: 1;
+}
+
+.prod_bottom .compra:hover {
+    background-color: #85b463;
+    color: black;
+}
+
+
+/* ZONA PÁRRAFOS */
+.doble {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doble p {
+    width: 30%;
+}
+
+.doble p:first-child {
+    margin-left: 15%;
+}
+
+.doble p:last-child {
+    margin-right: 15%;
+}
+
+.doble p::first-letter {
+    color: black;
+    font-family: Oswald;
+    font-size: 30px;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #bbdb88;
+}
+
+.footer_links {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FOOTER - ESTILOS COLUMNAS */
+.column h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Oswald;
+    color: white;
+}
+
+.column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li a:visited {
+    color: grey;
+}
+
+.column ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.column ul li {
+    padding-top: 20px;
+}
+
+.column ul li:last-child {
+    padding-top: 40px;
+}
+
+footer > div:last-child {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    padding-bottom: 25px;
 }

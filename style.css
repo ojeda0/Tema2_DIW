@@ -1,71 +1,43 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.container{
-    max-width: 1540px;
+#pie-documento {
     width: 100%;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    padding: 0 30px 0 30px;
-    width: 100%;
-}
-
-.row > div {
-    width: 50%;
-    display: flex;
-}
-
-.row img {
-    width: 100%;
-}
-
-.htmlblock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: gray;
     text-align: center;
-    background-color: rgb(250, 192, 45);
 }
 
-.innerblock{
+.fila1 {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.innerblock > div:first-child {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    letter-spacing: 1px;
-    color: black;
-    text-transform: uppercase;
+.fila1 #izquierdo, .fila1 #derecho{
+    width: 25%;
+    background-color: gray;
+    padding: 30px;
+    border: 2px dotted black;
 }
 
-.title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    padding: 3% 0 10% 0;
+.fila1 #izquierdo{
+    float: left;
+    text-align: right;
 }
 
-.enlace {
-    border: 1px solid black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    transition: 0.3s;
-    padding: 5%;
+.fila1 #derecho{
+    float: right;
+    text-align: right;
 }
 
-.enlace:hover {
-    background-color: black;
-    color: rgb(250, 192, 45);
+.fila2 {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.fila2 #texto {
+    width: 50%;
+    margin: 0 auto;
+    text-align: right;
 }
