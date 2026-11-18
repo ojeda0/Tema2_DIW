@@ -1,43 +1,15 @@
-#pie-documento {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    background-color: gray;
-    text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.fila1 {
-    width: 100%;
+header {
     display: flex;
-    justify-content: space-between;
-}
-
-.fila1 #izquierdo, .fila1 #derecho{
-    width: 25%;
-    background-color: gray;
-    padding: 30px;
-    border: 2px dotted black;
-}
-
-.fila1 #izquierdo{
-    float: left;
-    text-align: right;
-}
-
-.fila1 #derecho{
-    float: right;
-    text-align: right;
-}
-
-.fila2 {
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: white;
     width: 100%;
-    padding-top: 30px;
-}
-
-.fila2 #texto {
-    width: 50%;
-    margin: 0 auto;
-    text-align: right;
+    padding: 10px;
 }

@@ -1,0 +1,125 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 130px 1fr 40px;
+    grid-template-areas:
+        "cabecera cabecera"
+        "menu main"
+        "footer footer";
+}
+
+.cabecera {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.cabecera img {
+    max-width: 100px;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #eee;
+    padding: 20px 0 0 20px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.menu a:hover, .menu a.selected {
+    color: goldenrod;
+}
+
+.main {
+    grid-area: main;
+    margin-right: 260px;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.filtro {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.filtro ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    background-color: goldenrod;
+}
+
+.filtro a.selected, .filtro a:hover {
+    background-color: black;
+    color: goldenrod;
+}
+
+.marcas {
+    width: 750px;
+    margin: 15px auto;
+}
+
+.marcas ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    gap: 4px;
+}
+
+.marcas li {
+    background-color: #eee;
+    border-radius: 16px;
+    padding: 6px;
+}
+
+.marcas li:hover {
+    color: gold;
+    background-color: goldenrod;
+    cursor: default;
+}
+
+.marcas li.nostock, .marcas li.nostock:hover {
+    color: #ddd;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    font-size: 12px;
+    color: white;
+}
