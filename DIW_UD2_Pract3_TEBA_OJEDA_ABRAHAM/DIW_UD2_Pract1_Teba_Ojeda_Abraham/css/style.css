@@ -1,0 +1,342 @@
+/* resetea los estilos del navegador */
+*{margin: 0; padding: 0;}
+
+
+/* CABECERA */
+header {
+    display: block;
+    width: 100%;
+    align-items: center;
+}
+
+#logo {
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+header nav {
+    display: block;
+    width: 50%;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul {
+    display: inline;
+    text-align: left;
+    background-color: #bbdb88;
+    padding: 20px 80px 20px 0px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+header nav ul li {
+    font-size: 12px;
+    display: inline;
+    list-style: none;
+    padding-left: 70px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: black
+}
+
+#redes {
+    width: 50%;
+    display: inline;
+    text-align: right;
+    float: left;
+}
+
+#redes a {
+    display: inline;
+    list-style: none;
+    padding-right: 35px;
+}
+
+#redes a:first-child::after {
+    
+    content: url("../img/facebook.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#redes a:nth-child(2)::after {
+    
+    content: url("../img/twitter.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#redes a:last-child::after {
+    
+    content: url("../img/linkedin.png");
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+
+}
+
+#redes a span {
+    display: none;
+}
+
+header nav ul li:nth-child(4) a {
+    color: red;
+}
+
+header nav ul li:nth-child(4) a:hover {
+    text-decoration: underline;
+}
+
+
+/* BANNER Y CONTENIDO PRINCIPAL */
+.banner {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.banner img{
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+}
+
+#main h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Oswald;
+    font-size: 40px;
+    color: black;
+}
+
+.principal {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.principal p, .doble p{
+    text-align: justify;
+    color: #92968c;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ZONA PRODUCTOS */
+.productos {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.productos ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productos ul li {
+    width: calc(100%/3);
+    padding: 0 15px;
+}
+
+.productos ul li img{
+    width: 100%;
+}
+
+.productos ul li h3{
+    text-align: center;
+    color: #292a27;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Oswald;
+    letter-spacing: 1px;
+}
+
+.desc {
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.prod_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.prod_bottom .price {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+}
+
+.prod_bottom .compra {
+    background-color: #bbdb88;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.prod_bottom .compra .material-symbols-outlined {
+    font-size: 20px;
+    color: inherit;
+    line-height: 1;
+}
+
+.prod_bottom .compra:hover {
+    background-color: #85b463;
+    color: black;
+}
+
+
+/* ZONA PÁRRAFOS */
+.doble {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doble p {
+    width: 30%;
+}
+
+.doble p:first-child {
+    margin-left: 15%;
+}
+
+.doble p:last-child {
+    margin-right: 15%;
+}
+
+.doble p::first-letter {
+    color: black;
+    font-family: Oswald;
+    font-size: 30px;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #bbdb88;
+}
+
+.footer_links {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FOOTER - ESTILOS COLUMNAS */
+.column h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Oswald;
+    color: white;
+}
+
+.column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li a:visited {
+    color: grey;
+}
+
+.column ul li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.column ul li {
+    padding-top: 20px;
+}
+
+.column ul li:last-child {
+    padding-top: 40px;
+}
+
+footer > div:last-child {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        width: 50%;
+        order: 1;
+    }
+
+    header nav {
+        width: 100%;
+        float: left;
+        order: 3;
+    }
+
+    #redes {
+        width: 50%;
+        order: 2;
+    }
+
+
+
+
+
+}
