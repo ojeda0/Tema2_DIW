@@ -1,0 +1,132 @@
+/* RESETEAR MARGENES */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ESTRUCTURA GRID */
+body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 130px 1fr 40px;
+    grid-template-areas: 
+        "cabecera cabecera"
+        "menu main"
+        "footer footer"
+    ;
+}
+
+
+/* CABECERA */
+.cabecera {
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+}
+
+.cabecera img{
+    max-width: 100px;
+}
+
+
+/* MENU */
+.menu {
+    grid-area: menu;
+    background-color: #eee;
+    padding: 20px 0px 0px 20px;
+}
+
+.menu nav ul li {
+    padding-bottom: 10px;
+}
+
+.menu nav ul li a{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.menu nav ul li a:hover {
+    color: goldenrod;
+}
+
+.menu nav ul li a.selected{
+    color: goldenrod;
+}
+
+
+/* MAIN */
+.main {
+    grid-area: main;
+    padding-right: 260px;
+    padding-top: 20px;
+}
+
+.main h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* FILTRO*/
+.filtro {
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.filtro ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 4px;
+    background-color: goldenrod;
+}
+
+.filtro ul li a.selected, .filtro ul li a:hover{
+    background-color: black;
+    color: goldenrod;
+}
+
+
+/* MARCAS */
+.marcas {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.marcas ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    gap: 4px;
+}
+
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+}
+
+
+@media (max-width: 768px) {
+
+    
+
+}
